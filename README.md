@@ -17,8 +17,7 @@ I installed openSUSE on nvme0n1p4 with action "Delete" and not "allow shrink"
 <br>
 To get into the BIOS, press ESC serveral times during startup
 <br>
-Then choose "Boot Menu (F9)" from the BIOS menu.
-There choos your USB stick to install openSUSE
+Then choose "Boot Menu (F9)" from the BIOS menu and choose your USB stick to install openSUSE
 <br>
 I had to disable secure boot in the BIOS.
 <br>
@@ -26,9 +25,9 @@ I had to disable secure boot in the BIOS.
 3.  WiFi works out of the box :smile:
 <br>
 <br>
-4. Audio / Sound
-    Do not  works out of the box
-    Install "sof-firmware"
+4. Audio / Sound<br>
+    Do not  works out of the box<br>
+    Install "sof-firmware"<br>
 <br>
 <br>
 5. Mount Windows Partion
