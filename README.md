@@ -73,7 +73,7 @@ Then you can choose the free partion during the installation via the Agama-Insta
 ```
 <br>
 
-DP-3 is my Dell monitor. With :D I force to use this monitor.
+DP-3 is my Dell monitor. With :D I force to use this monitor.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Extend GRUB_CMDLINE_LINUX with "video=DP-3:D video=eDP:e" in /etc/default/grub and generate the new grub config [^2]
 <br>
 <br>
