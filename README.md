@@ -76,8 +76,9 @@ Then you can choose the free partion during the installation via the Agama-Insta
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DP-3 is my Dell monitor. With :D I force to use this monitor.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Extend GRUB_CMDLINE_LINUX with "video=DP-3:D video=eDP:e" in /etc/default/grub and generate the new grub config [^2]
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GRUB_CMDLINE_LINUX_DEFAULT="mitigations=auto quiet video=DP-3:D video=eDP-1:e security=selinux selinux=1"
-
+``` 
+GRUB_CMDLINE_LINUX_DEFAULT="mitigations=auto quiet video=DP-3:D video=eDP-1:e security=selinux selinux=1"
+``` 
 <br>
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Still open: Login screen lauches only with the resolution of 640x480. But after login, I have my preferd resultion.
