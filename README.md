@@ -43,30 +43,30 @@ If you do not need a Bitlocker encryption on your Windows Drive, you can decativ
 <br>
 6. Problems with Dockingstation (Dell Monitor U3425we)<br>
 <br>
-6.1 Change Bios Settings
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.1 Change Bios Settings
 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Disable FastBoot:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After disabling FastBoot, I can use mouse and keyboard on the GRUB screen.
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Also the monitor speakers works after disabling FastBoot.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Disable FastBoot:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After disabling FastBoot, I can use mouse and keyboard on the GRUB screen.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Also the monitor speakers works after disabling FastBoot.
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Boot on Power:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If you want, that the Laptop boots, when you connect Thunderbold (Boot on Power)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Disable "HP Powermangement" and enable "Boot on Power" in the BIOS<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If you want, that the Laptop boots, when you connect Thunderbold (Boot on Power)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Disable "HP Powermangement" and enable "Boot on Power" in the BIOS<br>
 <br>
-6.2 Change GRUB2 stetting <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;During the start up, no login screen after booting.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;There, I had to enforce to use the montior screen.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.2 Change GRUB2 stetting <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;During the start up, no login screen after booting.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;There, I had to enforce to use the montior screen.
 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First, get your display via
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First, get your display via
 ``` 
         xpandr
 ```  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I get: DP-3
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I get: DP-3
 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Extend GRUB_CMDLINE_LINUX with "video=DP-3:D video=eDP:e" in /etc/default/grub and generate the new grub config [^2]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Extend GRUB_CMDLINE_LINUX with "video=DP-3:D video=eDP:e" in /etc/default/grub and generate the new grub config [^2]
 <br>
 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Still open: Login screen lauches only with the resolution of 640x480. But after login, I have my preferd resultion.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;Still open: Login screen lauches only with the resolution of 640x480. But after login, I have my preferd resultion.<br>
 
 [^1]: https://itler.net/laufwerk-mit-orangen-warndreieck-und-ausrufezeichen/
 [^2]: https://superuser.com/questions/1583625/display-grub-on-external-monitor-with-docking-station
