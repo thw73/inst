@@ -46,7 +46,7 @@ If you do not need a Bitlocker encryption on your Windows Drive, you can decativ
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.1 Change Bios Settings
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Disable FastBoot:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After disabling FastBoot, I can use mouse and keyboard on the GRUB screen.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After disabling FastBoot, I can use mouse and keyboard on the GRUB screen.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Also the monitor speakers works after disabling FastBoot.
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Boot on Power:<br>
@@ -58,9 +58,11 @@ If you do not need a Bitlocker encryption on your Windows Drive, you can decativ
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;There, I had to enforce to use the montior screen.
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First, get your display via
+
 ``` 
         xpandr
-```  
+```
+  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I get: DP-3
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Extend GRUB_CMDLINE_LINUX with "video=DP-3:D video=eDP:e" in /etc/default/grub and generate the new grub config [^2]
