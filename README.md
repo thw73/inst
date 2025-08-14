@@ -4,7 +4,6 @@ I spend some time, to get openSUSE Leap 16 up and running on my new HP Elitebook
 <br><br>
 Here are some hints for the installation:
 <br>
-
 1. Reduce the Windows Partion to get space for Linux
 > During the installation, I have not found a way to reduce the size of the Windows partition. Therefore I created the partition under Windows with Disk Management (diskmgmt.msc)
 Then you can choose the free partion during the installation via the Agama-Installer    
@@ -65,7 +64,5 @@ I installed openSUSE on nvme0n1p4 with action "Delete" and not "allow shrink"
 >>>>Extend GRUB_CMDLINE_LINUX with "video=DP-3:D video=eDP:e" in /etc/default/grub and generate the new grub config [^2]
 <br>
 >>>>Still open: Login screen lauches only with the resolution of 640x480. But after login, I have my preferd resultion.
-
 [^1]: https://itler.net/laufwerk-mit-orangen-warndreieck-und-ausrufezeichen/
-
 [^2]: https://superuser.com/questions/1583625/display-grub-on-external-monitor-with-docking-station
