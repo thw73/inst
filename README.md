@@ -4,7 +4,7 @@ I spend some time, to get openSUSE Leap 16 up and running on my new HP Elitebook
 <br><br>
 Here are some hints for the installation:<br>
 <br>
-1. Reduce the Windows Partion to get space for Linux<br>
+1. Reduce the Windows partition to get space for Linux<br>
 During the installation, I have not found a way to reduce the size of the Windows partition. Therefore I created the partition under Windows with Disk Management (diskmgmt.msc).
 Then you can choose the free partion during the installation via the Agama-Installer    
 <p>
@@ -30,7 +30,7 @@ Then you can choose the free partion during the installation via the Agama-Insta
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Install "sof-firmware"<br>
 <br>
 <br>
-5. Mount Windows Partion<br>
+5. Mount Windows partition<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If you see a yellow warning triangle on your windows drive like:
 <p>
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="BitlockerWarnung.PNG" width="200" >
