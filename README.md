@@ -8,19 +8,16 @@ Here are some hints for the installation:
 During the installation, I have not found a way to reduce the size of the Windows partition. Therefore I created the partition under Windows with Disk Management (diskmgmt.msc)
 Then you can choose the free partion during the installation via the Agama-Installer    
 <p>
-&emsp;<img src="AgamaPartions.jpg" width="400" >
+<img src="AgamaPartions.jpg" width="400">
 </p>
 I installed openSUSE on nvme0n1p4 with action "Delete" and not "allow shrink"
 <br>
 2. Install from USB stick
-    
-    To get into the BIOS, press ESC serveral times during startup
-
-    Then choose "Boot Menu (F9)" from the BIOS menu.
-    There choos your USB stick to install openSUSE
-
-    I had to disable secure boot in the BIOS.
-
+To get into the BIOS, press ESC serveral times during startup
+Then choose "Boot Menu (F9)" from the BIOS menu.+
+There choos your USB stick to install openSUSE
+I had to disable secure boot in the BIOS.
+<br>
 3.  WiFi works out of the box :smile:
 <br>
 4. Audio / Sound
