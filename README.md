@@ -34,7 +34,7 @@ I had to disable secure boot in the BIOS.
    <p>
    &emsp;<img src="BitlockerWarnung.PNG" width="200" >
    </p>
-   Then your Bitlocker encryption is not complete. Just complete your Bitlocker encryption [^1]
+   Then your Bitlocker encryption is not complete. Just complete your Bitlocker encryption [^2]
    
    Now you cann access your Windows drive via Dolphin. You have to enter two passwords. The first one is the Bitlocker-Key and the second one is your password. 
    If you do not need a Bitlocker encryption on your Windows Drive, you can decativate your Bitlocker encryption after the successfull encryption.
@@ -65,5 +65,4 @@ Extend GRUB_CMDLINE_LINUX with "video=DP-3:D video=eDP:e" in /etc/default/grub a
 <br>
 Still open: Login screen lauches only with the resolution of 640x480. But after login, I have my preferd resultion.
 
-[^1]: https://itler.net/laufwerk-mit-orangen-warndreieck-und-ausrufezeichen
 [^2]: https://superuser.com/questions/1583625/display-grub-on-external-monitor-with-docking-station
