@@ -29,7 +29,7 @@ I had to disable secure boot in the BIOS.
     Install "sof-firmware"<br>
 <br>
 <br>
-5. Mount Windows Partion
+5. Mount Windows Partion<br>
 If you see a yellow warning triangle on your windows drive like:
 <p>
    &emsp;<img src="BitlockerWarnung.PNG" width="200" >
