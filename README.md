@@ -44,18 +44,20 @@ If you do not need a Bitlocker encryption on your Windows Drive, you can decativ
 6. Problems with Dockingstation (Dell Monitor U3425we)
 <br>
 6.1 Change Bios Settings
-
+<br>
 Disable FastBoot:
+<br>
 After disabling FastBoot, I can use mouse and keyboard on the GRUB screen.
 Also the monitor speakers works after disabling FastBoot.
 
 Boot on Power:
+<br>
 If you want, that the Laptop boots, when you connect Thunderbold (Boot on Power)
 Disable "HP Powermangement" and enable "Boot on Power" in the BIOS
         
 6.2 Change GRUB2 stetting
 During the start up, no login screen after booting. There, I had to enforce to use the montior screen.
-
+<br>
 First, get your display via
 ``` 
         xpandr
