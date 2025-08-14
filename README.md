@@ -33,7 +33,7 @@ Then you can choose the free partion during the installation via the Agama-Insta
 5. Mount Windows Partion<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If you see a yellow warning triangle on your windows drive like:
 <p>
-   &emsp;<img src="BitlockerWarnung.PNG" width="200" >
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="BitlockerWarnung.PNG" width="200" >
 </p>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Then your Bitlocker encryption is not complete.<br> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Just complete your Bitlocker Extend GRUB_CMDLINE_LINUX with "video=DP-3:D video=eDP:e" in /etc/default/grub and generate the new grub config [^2]
@@ -65,7 +65,8 @@ If you do not need a Bitlocker encryption on your Windows Drive, you can decativ
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Extend GRUB_CMDLINE_LINUX with "video=DP-3:D video=eDP:e" in /etc/default/grub and generate the new grub config [^2]
 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Still open: Login screen lauches only with the resolution of 640x480. But after login, I have my preferd resultion.
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Still open: Login screen lauches only with the resolution of 640x480. But after login, I have my preferd resultion.<br>
 
 [^1]: https://itler.net/laufwerk-mit-orangen-warndreieck-und-ausrufezeichen/
 [^2]: https://superuser.com/questions/1583625/display-grub-on-external-monitor-with-docking-station
