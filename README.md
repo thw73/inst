@@ -62,11 +62,18 @@ Then you can choose the free partion during the installation via the Agama-Insta
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First, get your display via
 
 ``` 
-        xpandr
+        xrandr --listmonitors 
 ```
   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I get: DP-3
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I get: <br>
+
+``` 
+         0: +*eDP-1 2560/301x1600/188+0+0  eDP-1
+         1: +DP-3 640/169x480/127+2560+0  DP-3 
+```
 <br>
+
+DP-3 is my Dell monitor. With :D I force to use this monitor.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Extend GRUB_CMDLINE_LINUX with "video=DP-3:D video=eDP:e" in /etc/default/grub and generate the new grub config [^2]
 <br>
 <br>
