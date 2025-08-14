@@ -52,11 +52,12 @@ Also the monitor speakers works after disabling FastBoot.
 
 Boot on Power:
 <br>
-If you want, that the Laptop boots, when you connect Thunderbold (Boot on Power)
+If you want, that the Laptop boots, when you connect Thunderbold (Boot on Power)<br>
 Disable "HP Powermangement" and enable "Boot on Power" in the BIOS
-        
+<br>
 6.2 Change GRUB2 stetting
-During the start up, no login screen after booting. There, I had to enforce to use the montior screen.
+During the start up, no login screen after booting.<br>
+There, I had to enforce to use the montior screen.
 <br>
 First, get your display via
 ``` 
