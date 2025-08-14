@@ -40,21 +40,21 @@ Now you cann access your Windows drive via Dolphin. You have to enter two passwo
 If you do not need a Bitlocker encryption on your Windows Drive, you can decativate your Bitlocker encryption after the successfull encryption.
 <br>
 <br>
-6. Problems with Dockingstation (Dell Monitor U3425we)
+6. Problems with Dockingstation (Dell Monitor U3425we)<br>
 <br>
 6.1 Change Bios Settings
 <br>
-Disable FastBoot:
+Disable FastBoot:<br>
 <br>
 After disabling FastBoot, I can use mouse and keyboard on the GRUB screen.
 Also the monitor speakers works after disabling FastBoot.
 
-Boot on Power:
+Boot on Power:<br>
 <br>
 If you want, that the Laptop boots, when you connect Thunderbold (Boot on Power)<br>
 Disable "HP Powermangement" and enable "Boot on Power" in the BIOS
 <br>
-6.2 Change GRUB2 stetting
+6.2 Change GRUB2 stetting <br>
 During the start up, no login screen after booting.<br>
 There, I had to enforce to use the montior screen.
 <br>
