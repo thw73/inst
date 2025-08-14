@@ -3,34 +3,35 @@
 I spend some time, to get openSUSE Leap 16 up and running on my new HP Elitebook 840 G11 with my Dell U3425we Hub-Monitor.
 <br><br>
 Here are some hints for the installation:<br>
+<br>
 1. Reduce the Windows Partion to get space for Linux
-During the installation, I have not found a way to reduce the size of the Windows partition. Therefore I created the partition under Windows with Disk Management (diskmgmt.msc)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;During the installation, I have not found a way to reduce the size of the Windows partition. Therefore I created the partition under Windows with Disk Management (diskmgmt.msc)
 Then you can choose the free partion during the installation via the Agama-Installer    
 <p>
-<img src="AgamaPartions.jpg" width="400">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="AgamaPartions.jpg" width="400">
 </p>
-I installed openSUSE on nvme0n1p4 with action "Delete" and not "allow shrink"
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I installed openSUSE on nvme0n1p4 with action "Delete" and not "allow shrink"
 <br>
 <br>
 2. Install from USB stick
 <br>
-To get into the BIOS, press ESC serveral times during startup
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To get into the BIOS, press ESC serveral times during startup
 <br>
-Then choose "Boot Menu (F9)" from the BIOS menu and select your USB stick to install openSUSE
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp, Then choose "Boot Menu (F9)" from the BIOS menu and select your USB stick to install openSUSE
 <br>
-I had to disable secure boot in the BIOS.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I had to disable secure boot in the BIOS.
 <br>
 <br>
 3.  WiFi works out of the box :smile:
 <br>
 <br>
 4. Audio / Sound<br>
-    Do not  works out of the box<br>
-    Install "sof-firmware"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Do not  works out of the box<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Install "sof-firmware"<br>
 <br>
 <br>
 5. Mount Windows Partion<br>
-If you see a yellow warning triangle on your windows drive like:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If you see a yellow warning triangle on your windows drive like:
 <p>
    &emsp;<img src="BitlockerWarnung.PNG" width="200" >
 </p>
