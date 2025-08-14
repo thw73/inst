@@ -45,7 +45,6 @@ If you do not need a Bitlocker encryption on your Windows Drive, you can decativ
 6.1 Change Bios Settings
 <br>
 Disable FastBoot:<br>
-<br>
 After disabling FastBoot, I can use mouse and keyboard on the GRUB screen.
 Also the monitor speakers works after disabling FastBoot.
 <br>
