@@ -26,7 +26,7 @@ Then you can choose the free partion during the installation via the Agama-Insta
 <br>
 <br>
 4. Audio / Sound<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Do not  works out of the box<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Does not  works out of the box<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Install "sof-firmware"<br>
 <br>
 <br>
