@@ -9,7 +9,7 @@ Here are some hints for the installation:
 > During the installation, I have not found a way to reduce the size of the Windows partition. Therefore I created the partition under Windows with Disk Management (diskmgmt.msc)
 Then you can choose the free partion during the installation via the Agama-Installer    
 <p>
-&emsp;<img src="img/AgamaPartions.jpg" width="400" >
+&emsp;<img src="AgamaPartions.jpg" width="400" >
 </p>
 I installed openSUSE on nvme0n1p4 with action "Delete" and not "allow shrink"
 <br>
