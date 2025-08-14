@@ -71,7 +71,6 @@ Then you can choose the free partion during the installation via the Agama-Insta
 <br>
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Still open: Login screen lauches only with the resolution of 640x480. But after login, I have my preferd resultion.<br>
-
 ####Reference
 [^1]:https://itler.net/laufwerk-mit-orangen-warndreieck-und-ausrufezeichen
 [^2]:https://superuser.com/questions/1583625/display-grub-on-external-monitor-with-docking-station
