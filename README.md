@@ -35,6 +35,7 @@ I had to disable secure boot in the BIOS.
    &emsp;<img src="BitlockerWarnung.PNG" width="200" >
    </p>
    Then your Bitlocker encryption is not complete. Just complete your Bitlocker encryption [^1]
+   
    Now you cann access your Windows drive via Dolphin. You have to enter two passwords. The first one is the Bitlocker-Key and the second one is your password. 
    If you do not need a Bitlocker encryption on your Windows Drive, you can decativate your Bitlocker encryption after the successfull encryption.
 <br>
