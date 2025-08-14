@@ -17,7 +17,7 @@ Then you can choose the free partion during the installation via the Agama-Insta
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To get into the BIOS, press ESC serveral times during startup
 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp, Then choose "Boot Menu (F9)" from the BIOS menu and select your USB stick to install openSUSE
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Then choose "Boot Menu (F9)" from the BIOS menu and select your USB stick to install openSUSE
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I had to disable secure boot in the BIOS.
 <br>
@@ -35,7 +35,8 @@ Then you can choose the free partion during the installation via the Agama-Insta
 <p>
    &emsp;<img src="BitlockerWarnung.PNG" width="200" >
 </p>
-Then your Bitlocker encryption is not complete. Just complete your Bitlocker Extend GRUB_CMDLINE_LINUX with "video=DP-3:D video=eDP:e" in /etc/default/grub and generate the new grub config [^2]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Then your Bitlocker encryption is not complete.<br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Just complete your Bitlocker Extend GRUB_CMDLINE_LINUX with "video=DP-3:D video=eDP:e" in /etc/default/grub and generate the new grub config [^2]
 Now you cann access your Windows drive via Dolphin. You have to enter two passwords. The first one is the Bitlocker-Key and the second one is your password. 
 If you do not need a Bitlocker encryption on your Windows Drive, you can decativate your Bitlocker encryption after the successfull encryption.
 <br>
@@ -44,27 +45,27 @@ If you do not need a Bitlocker encryption on your Windows Drive, you can decativ
 <br>
 6.1 Change Bios Settings
 <br>
-Disable FastBoot:<br>
-After disabling FastBoot, I can use mouse and keyboard on the GRUB screen.
-Also the monitor speakers works after disabling FastBoot.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Disable FastBoot:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After disabling FastBoot, I can use mouse and keyboard on the GRUB screen.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Also the monitor speakers works after disabling FastBoot.
 <br>
-Boot on Power:<br>
-If you want, that the Laptop boots, when you connect Thunderbold (Boot on Power)<br>
-Disable "HP Powermangement" and enable "Boot on Power" in the BIOS<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Boot on Power:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If you want, that the Laptop boots, when you connect Thunderbold (Boot on Power)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Disable "HP Powermangement" and enable "Boot on Power" in the BIOS<br>
 <br>
 6.2 Change GRUB2 stetting <br>
-During the start up, no login screen after booting.<br>
-There, I had to enforce to use the montior screen.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;During the start up, no login screen after booting.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;There, I had to enforce to use the montior screen.
 <br>
-First, get your display via
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First, get your display via
 ``` 
         xpandr
 ```  
-I get: DP-3
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I get: DP-3
 <br>
-Extend GRUB_CMDLINE_LINUX with "video=DP-3:D video=eDP:e" in /etc/default/grub and generate the new grub config [^2]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Extend GRUB_CMDLINE_LINUX with "video=DP-3:D video=eDP:e" in /etc/default/grub and generate the new grub config [^2]
 <br>
-Still open: Login screen lauches only with the resolution of 640x480. But after login, I have my preferd resultion.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Still open: Login screen lauches only with the resolution of 640x480. But after login, I have my preferd resultion.
 
 [^1]: https://itler.net/laufwerk-mit-orangen-warndreieck-und-ausrufezeichen/
 [^2]: https://superuser.com/questions/1583625/display-grub-on-external-monitor-with-docking-station
