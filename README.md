@@ -32,7 +32,7 @@ I had to disable secure boot in the BIOS.
    If you see a yellow warning triangle on your windows drive like:
 
    <p>
-   &emsp;<img src="img/BitlockerWarnung.PNG" width="200" >
+   &emsp;<img src="BitlockerWarnung.PNG" width="200" >
    </p>
    Then your Bitlocker encryption is not complete. Just complete your Bitlocker encryption [^1]
    Now you cann access your Windows drive via Dolphin. You have to enter two passwords. The first one is the Bitlocker-Key and the second one is your password. 
