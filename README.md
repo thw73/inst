@@ -37,8 +37,8 @@ Then you can choose the free partion during the installation via the Agama-Insta
 </p>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Then your Bitlocker encryption is not complete. Just complete your Bitlocker encryption(https://itler.net/laufwerk-mit-orangen-warndreieck-und-ausrufezeichen)
 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Now you cann access your Windows drive via Dolphin. 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You have to enter two passwords. The first one is the Bitlocker-Key and the second one is your password. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Now you cann access your Windows drive via Dolphin.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You have to enter two passwords. The first one is the Bitlocker-Key and the second one is your password.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If you do not need a Bitlocker encryption on your Windows Drive, you can decativate your Bitlocker encryption after the successfull encryption.
 <br>
 <br>
