@@ -16,7 +16,7 @@ I installed openSUSE on nvme0n1p4 with action "Delete" and not "allow shrink"
 <br>
 To get into the BIOS, press ESC serveral times during startup
 <br>
-Then choose "Boot Menu (F9)" from the BIOS menu and choose your USB stick to install openSUSE
+Then choose "Boot Menu (F9)" from the BIOS menu and select your USB stick to install openSUSE
 <br>
 I had to disable secure boot in the BIOS.
 <br>
