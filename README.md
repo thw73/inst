@@ -48,13 +48,13 @@ Disable FastBoot:<br>
 <br>
 After disabling FastBoot, I can use mouse and keyboard on the GRUB screen.
 Also the monitor speakers works after disabling FastBoot.
-
-Boot on Power:<br>
 <br>
+Boot on Power:<br>
 If you want, that the Laptop boots, when you connect Thunderbold (Boot on Power)<br>
 Disable "HP Powermangement" and enable "Boot on Power" in the BIOS
 <br>
 6.2 Change GRUB2 stetting <br>
+<br>
 During the start up, no login screen after booting.<br>
 There, I had to enforce to use the montior screen.
 <br>
