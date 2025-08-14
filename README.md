@@ -4,7 +4,7 @@ I spend some time, to get openSUSE Leap 16 up and running on my new HP Elitebook
 <br><br>
 Here are some hints for the installation:<br>
 <br>
-1. Reduce the Windows Partion to get space for Linux
+1. Reduce the Windows Partion to get space for Linux<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;During the installation, I have not found a way to reduce the size of the Windows partition. Therefore I created the partition under Windows with Disk Management (diskmgmt.msc)
 Then you can choose the free partion during the installation via the Agama-Installer    
 <p>
