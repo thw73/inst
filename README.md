@@ -40,8 +40,8 @@ Then you can choose the free partion during the installation via the Agama-Insta
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Now you cann access your Windows drive via Dolphin.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You have to enter two passwords. The first one is the Bitlocker-Key and the second one is your password.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If you do not need a Bitlocker encryption on your Windows Drive, you can decativate your Bitlocker encryption <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;after the successfull encryption.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If you do not need a Bitlocker encryption on your Windows Drive, you can decativate your Bitlocker <br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;encryption after the successfull encryption.
 <br>
 <br>
 6. Problems with Dockingstation (Dell Monitor U3425we)<br>
@@ -75,7 +75,8 @@ Then you can choose the free partion during the installation via the Agama-Insta
 <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DP-3 is my Dell monitor. With :D I force to use this monitor.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Extend GRUB_CMDLINE_LINUX with "video=DP-3:D video=eDP:e" in /etc/default/grub and generate the new grub config [^2]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Extend GRUB_CMDLINE_LINUX with "video=DP-3:D video=eDP:e" in /etc/default/grub <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and generate the new grub config [^2]
 ``` 
 GRUB_CMDLINE_LINUX_DEFAULT="mitigations=auto quiet video=DP-3:D video=eDP-1:e security=selinux selinux=1"
 ``` 
