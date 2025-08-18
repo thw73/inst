@@ -7,11 +7,9 @@ Here are some hints for the installation:
 
 - Reduce the Windows Partion to get space for Linux<br>
     During the installation, I have not found a way to reduce the size of the Windows partition. Therefore I created the partition under Windows with Disk Management (diskmgmt.msc)
-    Then you can choose the free partion during the installation via the Agama-Installer <br>  
-<p>
-&emsp;&emsp;&emsp;<img src="AgamaPartions.jpg" width="400" >
-</p>
-&emsp;&emsp;&emsp;I installed openSUSE on nvme0n1p4 with action "Delete" and not "allow shrink"
+    Then you can choose the free partion during the installation via the Agama-Installer <br>
+    <img src="AgamaPartions.jpg" width="400" > <br>
+    I installed openSUSE on nvme0n1p4 with action "Delete" and not "allow shrink"
 
 <br>
 
