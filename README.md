@@ -32,8 +32,7 @@ Here are some hints for the installation:
 
 -   Mount Windows Partion<br>
    If you see a yellow warning triangle on your windows drive like:<br>
-
-   <img src="BitlockerWarnung.PNG" width="200" > <br>
+   <img src="BitlockerWarnung.PNG" width="200" ><br>
    Then your Bitlocker encryption is not complete. Just complete your Bitlocker encryption [^1]. Now you cann access your Windows drive via Dolphin. You have to enter two passwords. The first one is the Bitlocker-Key and the second one is your password. <br>If you do not need a Bitlocker encryption on your Windows Drive, you can decativate your Bitlocker encryption after the successfull encryption.
 
 
