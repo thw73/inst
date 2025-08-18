@@ -9,7 +9,7 @@ Here are some hints for the installation:
     During the installation, I have not found a way to reduce the size of the Windows partition. Therefore I created the partition under Windows with Disk Management (diskmgmt.msc)
     Then you can choose the free partion during the installation via the Agama-Installer <br>  
 <p>
-&emsp;&emsp;&emsp;<img src="img/AgamaPartions.jpg" width="400" >
+&emsp;&emsp;&emsp;<img src="AgamaPartions.jpg" width="400" >
 </p>
 &emsp;&emsp;&emsp;I installed openSUSE on nvme0n1p4 with action "Delete" and not "allow shrink"
 
@@ -36,7 +36,7 @@ Here are some hints for the installation:
    If you see a yellow warning triangle on your windows drive like:
 
    <p>
-   &emsp;&emsp;&emsp;<img src="img/BitlockerWarnung.PNG" width="200" >
+   &emsp;&emsp;&emsp;<img src="BitlockerWarnung.PNG" width="200" >
    </p>
 
  Then your Bitlocker encryption is not complete. Just complete your Bitlocker encryption [^1]. Now you cann access your Windows drive via Dolphin. You have to enter two passwords. The first one is the Bitlocker-Key and the second one is your password. <br>If you do not need a Bitlocker encryption on your Windows Drive, you can decativate your Bitlocker encryption after the successfull encryption.
