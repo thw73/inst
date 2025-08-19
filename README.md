@@ -64,14 +64,14 @@ Here are some hints for the installation:
             1: +DP-3 640/169x480/127+2560+0  DP-3
             ```
             DP-3 is my Dell monitor. With ":D" I force to use this monitor.<br>
-            Extend GRUB_CMDLINE_LINUX with "video=DP-3:D video=eDP:e" in /etc/default/grub and generate the new grub config [^2] <br>
+            Extend GRUB_CMDLINE_LINUX_DEFAULT with "video=DP-3:D video=eDP:e" in /etc/default/grub and generate the new grub config [^2] <br>
             ```
             GRUB_CMDLINE_LINUX_DEFAULT="mitigations=auto quiet video=DP-3:D video=eDP-1:e security=selinux selinux=1"
             ```
 
 
     *   Still open:<br>
-        +    Login screen lauches only with the resolution of 640x480. But after login, I have my preferd resultion.
+        +    Login screen lauches only with the resolution of 640x480. But after login, I have my preferd resolution.
 
 [^1]: https://itler.net/laufwerk-mit-orangen-warndreieck-und-ausrufezeichen/
 
