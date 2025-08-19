@@ -46,7 +46,8 @@ Here are some hints for the installation:
 
         + Boot on Power:<br>
         If you want, that the Laptop boots, when you connect Thunderbold (Boot on Power)
-        Disable "HP Powermangement" and enable "Boot on Power" in the BIOS
+        Disable "HP Powermangement" and enable "Boot on Power" in the BIOS [^3]
+
         
     *   Change GRUB2 stetting
         +   During the start up, no login screen after booting.<br>
@@ -76,3 +77,5 @@ Here are some hints for the installation:
 [^1]: https://itler.net/laufwerk-mit-orangen-warndreieck-und-ausrufezeichen/
 
 [^2]: https://superuser.com/questions/1583625/display-grub-on-external-monitor-with-docking-station
+
+[^3]: https://h30434.www3.hp.com/t5/Notebook-Software-and-How-To-Questions/EliteBook-wake-power-up-on-Thunderbolt-connection/m-p/8935372
