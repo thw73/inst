@@ -54,19 +54,19 @@ Here are some hints for the installation:
              Therefore, I had to enforce to usse the montior screen.
 
              First, get your display via<br>
-            ```
+            ```console
             xrandr --listmonitors 
             ```
 
 
             I get:<br> 
-            ```
+            ```console
             0: +*eDP-1 2560/301x1600/188+0+0  eDP-1
             1: +DP-3 640/169x480/127+2560+0  DP-3
             ```
             DP-3 is my Dell monitor. With ":D" I force to use this monitor.<br>
             Extend GRUB_CMDLINE_LINUX_DEFAULT with "video=DP-3:D video=eDP:e" in /etc/default/grub and generate the new grub config [^2] <br>
-            ```
+            ```console
             GRUB_CMDLINE_LINUX_DEFAULT="mitigations=auto quiet video=DP-3:D video=eDP-1:e security=selinux selinux=1"
             ```
 
@@ -74,8 +74,102 @@ Here are some hints for the installation:
     *   Still open:<br>
         +    Login screen lauches only with the resolution of 640x480. But after login, I have my preferd resolution.
 
+
+# Intel GPU Driver for oneAPI
+
+-   Install GPU Driver<br>  
+    If you have the supported hardware [^7], you can install oneAPI.<br>
+    Here you find the information, how to install oneAPI [^4].
+    
+    This documentation there is also a link, how to install the Client GPU driver for Ubuntu[^5] <br>
+    In addition to this documentation, here are the related openSUSE Leap 16 Packages:
+
+
+    
+    | Ubuntu 2022<br>Package   | openSUSE Leap 16<br>Package | Comment     |
+    |--------   |-------------|-----------|
+    | libze-intel-gpu1      | libze_intel_gpu1           | -        |
+    | libze1      | level-zero           | -        |
+    | intel-opencl-icd        | intel-opencl           | -        |
+    |  clinfo       | clinfo           | -        |
+
+    <br>
+
+    Verifying the installation<br>
+    ````console
+    sudo clinfo | grep "Device Name"
+    ````
+    you should get:<br>
+    ````console
+    Device Name                                   Intel(R) Arc(TM) Graphics 
+    Device Name                                   Intel(R) Core(TM) Ultra 7 155H 
+    Device Name                                   Intel(R) Arc(TM) Graphics 
+    Device Name                                   Intel(R) Arc(TM) Graphics 
+    Device Name                                   Intel(R) Arc(TM) Graphics
+    ````
+
+- Install oneAPI    
+
+    Install oneAPI: see [^4] <br>
+
+    ````console
+    sudo zypper addrepo https://yum.repos.intel.com/oneapi oneAPI
+
+    rpm --import https://yum.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB
+
+    sudo zypper install intel-basekit
+    ````
+    oneAPI (version 2025.2) needs about 10GB disc space.
+
+
+- Pytorch
+
+    For Pytorch you need in addtion these following packages:
+    | Ubuntu 2022<br>Package   | openSUSE Leap 16<br>Package | Comment     |
+    |--------   |-------------|-----------|
+    | libze-dev       | level-zero-devel           | -        |
+    | python3-dev      | python313-devel          | Python.h        |
+    <br>
+    
+    These packages are needed, if you want to use torch.compile [^8] [^9].<br>
+
+    For Pytorch you need the Deep Learning Essentials from oneAPI [^10]<br>
+    Check you oneAPI version and instal the corresponding version. In my case 2025.2
+
+     ````console
+    sudo zypper install intel-deep-learning-essentials-2025.2
+    ````
+    Then you can follow the instruction in [^11] and install pytorch
+
+    ````console
+    pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/xpu
+    ````
+
+
 [^1]: https://itler.net/laufwerk-mit-orangen-warndreieck-und-ausrufezeichen/
 
 [^2]: https://superuser.com/questions/1583625/display-grub-on-external-monitor-with-docking-station
 
 [^3]: https://h30434.www3.hp.com/t5/Notebook-Software-and-How-To-Questions/EliteBook-wake-power-up-on-Thunderbolt-connection/m-p/8935372
+
+[^4]: https://en.opensuse.org/SDB:Install_oneAPI
+
+[^5]:https://dgpu-docs.intel.com/driver/client/overview.html#ubuntu-22.04
+
+[^6]: https://docs.pytorch.org/docs/2.8/notes/get_start_xpu.html
+
+[^7]: https://dgpu-docs.intel.com/devices/hardware-table.html
+
+[^8]: https://pytorch.org/get-started/pytorch-2-x/
+
+[^9]: https://docs.pytorch.org/tutorials/unstable/inductor_windows.html
+
+[^10]: https://www.intel.com/content/www/us/en/developer/articles/tool/pytorch-prerequisites-for-intel-gpu/2-8.html
+
+[^11]: https://docs.pytorch.org/docs/stable/notes/get_start_xpu.html
+
+
+
+
+[comment]: # (Package XY needs the Kernel Hearder, therefore you have to install the kernel header first)
+
