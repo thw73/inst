@@ -72,7 +72,7 @@ Here are some hints for the installation:
 
 
     *   Still open:<br>
-        +    Login screen lauches only with the resolution of 640x480. But after login, I have my preferd resolution.
+        +    Login screen lauches only with the resolution of 640x480. But after login, I have my preferred resolution.
 
 
 # Intel GPU Driver for oneAPI
@@ -81,7 +81,7 @@ Here are some hints for the installation:
     If you have the supported hardware [^7], you can install oneAPI.<br>
     Here you find the information, how to install oneAPI [^4].
     
-    This documentation there is also a link, how to install the Client GPU driver for Ubuntu[^5] <br>
+    Here is also a documentation, how to install the Client GPU driver for Ubuntu[^5] <br>
     In addition to this documentation, here are the related openSUSE Leap 16 Packages:
 
 
