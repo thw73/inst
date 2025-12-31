@@ -176,7 +176,7 @@ Here are some hints for the installation:
    pip3  install "openvino==2025.2.0"
     ````
      
-     - Install OpenVINO™ NPU plug <br>
+     - Install OpenVINO™ NPU plugin <br>
          You can install the plugin "openvino-intel-npu-plugin" via Myrlyn or zypper
 
     - Test installation
