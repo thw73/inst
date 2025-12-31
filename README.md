@@ -149,7 +149,7 @@ Here are some hints for the installation:
 
 
 - Install NPU driver <br>
-    You can install the offical OpenSUSE driver linux-npu-driver via Myrlyn or zypper
+    You can install the offical OpenSUSE driver "linux-npu-driver" via Myrlyn or zypper
     After the installation you have to add your user to the render group [^12]
 
     ````console
@@ -160,7 +160,7 @@ Here are some hints for the installation:
   Check driver
 
    ````console
-    /dev/accel> ls -laopenvino-intel-npu-plugin -
+    /dev/accel> ls -la
     crw-rw----. 1 root render 261, 0 31. Dez 16:09 accel0
     ````
 
@@ -174,14 +174,19 @@ Here are some hints for the installation:
      ````console
    pip3  install "openvino=2025.2.0"
     ````
-     - Install OpenVINO™ NPU plug
-         You can install the plugin openvino-intel-npu-plugin via Myrlyn or zypper
-     - Test installation:
-        ````console
-   python3 -c "from openvino import Core; print(Core().available_devices)"
+     
+     - Install OpenVINO™ NPU plug <br>
+         You can install the plugin "openvino-intel-npu-plugin" via Myrlyn or zypper
+
+       Test installation
+       
+    ````console
+    python3 -c "from openvino import Core; print(Core().available_devices)"
 
     ['CPU', 'GPU', 'NPU']
     ````
+    
+       
   
    
 
