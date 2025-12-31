@@ -75,9 +75,9 @@ Here are some hints for the installation:
         +    Login screen lauches only with the resolution of 640x480. But after login, I have my preferred resolution.
 
 
-# Intel GPU Driver for oneAPI
+# Intel GPU driver for oneAPI
 
--   Install GPU Driver<br>  
+-   Install GPU driver<br>  
     If you have the supported hardware [^7], you can install oneAPI.<br>
     Here you find the information, how to install oneAPI [^4].
     
@@ -145,6 +145,45 @@ Here are some hints for the installation:
     pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/xpu
     ````
 
+# Intel NPU driver and OpenVINO™
+
+
+- Install NPU driver <br>
+    You can install the offical OpenSUSE driver linux-npu-driver via Myrlyn or zypper
+    After the installation you have to add your user to the render group [^12]
+
+    ````console
+    sudo usermod -a -G render $USER 
+    ````
+   Reboot your system
+
+  Check driver
+
+   ````console
+    /dev/accel> ls -laopenvino-intel-npu-plugin -
+    crw-rw----. 1 root render 261, 0 31. Dez 16:09 accel0
+    ````
+
+   ````console
+    sudo dmesg | grep intel_vpu
+   [drm] Initialized intel_vpu 1.0.0 for 0000:00:0b.0 on minor 0
+    ````
+   
+- Install OpenVINO™  <br>
+   
+     ````console
+   pip3  install "openvino=2025.2.0"
+    ````
+     - Install OpenVINO™ NPU plug
+         You can install the plugin openvino-intel-npu-plugin via Myrlyn or zypper
+     - Test installation:
+        ````console
+   python3 -c "from openvino import Core; print(Core().available_devices)"
+
+    ['CPU', 'GPU', 'NPU']
+    ````
+  
+   
 
 [^1]: https://itler.net/laufwerk-mit-orangen-warndreieck-und-ausrufezeichen/
 
@@ -168,7 +207,7 @@ Here are some hints for the installation:
 
 [^11]: https://docs.pytorch.org/docs/stable/notes/get_start_xpu.html
 
-
+[^12]: https://medium.com/@cabelo_20098/installing-intel-npu-driver-on-linux-dde21924ec1f
 
 
 [comment]: # (Package XY needs the Kernel Hearder, therefore you have to install the kernel header first)
