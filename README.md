@@ -150,9 +150,13 @@ Here are some hints for the installation:
 
 - Install NPU driver <br>
     You can install the offical OpenSUSE driver "linux-npu-driver" via Myrlyn or zypper<br>
+    The "Linux-npu-driver" requires GoogleTest. Therefore you have to install GoogleTest first.
     After the installation you have to add your user to the render group [^12]
 
     ````console
+    sudo zypper install gtest
+    sudo zypper install linux-npu-driver
+
     sudo usermod -a -G render $USER 
     ````
    Reboot your system
@@ -187,7 +191,8 @@ Here are some hints for the installation:
     ['CPU', 'GPU', 'NPU']
     ````
     
-       
+ - Open items <br>
+  The OpenVINO command compile_model(model, device) does not work with NPU
   
    
 
