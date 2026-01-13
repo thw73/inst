@@ -190,9 +190,10 @@ Here are some hints for the installation:
 
     ['CPU', 'GPU', 'NPU']
     ````
-    
- - Open items <br>
-  The OpenVINO command compile_model(model, device) does not work with NPU
+- NPU compiler <br>
+    The NPU compiler is not provided by the openSUSE package. I was not able to compile the compiler from the source. That's why I used the compiled library for Ubuntu. [^13]. <br>
+    Just download the current driver. For example linux-npu-driver-v1.28.0.20251218-20347000698-ubuntu2404.tar.gz.
+    Extract the file and copy the NPU compiler (libnpu_driver_compiler.so) to /usr/lib64/
   
    
 
@@ -219,6 +220,9 @@ Here are some hints for the installation:
 [^11]: https://docs.pytorch.org/docs/stable/notes/get_start_xpu.html
 
 [^12]: https://medium.com/@cabelo_20098/installing-intel-npu-driver-on-linux-dde21924ec1f
+
+[^13]: https://github.com/intel/linux-npu-driver/releases
+
 
 
 [comment]: # (Package XY needs the Kernel Hearder, therefore you have to install the kernel header first)
